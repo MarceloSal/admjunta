@@ -55,10 +55,10 @@ role :db, %w{deploy@206.189.236.246}
 # server "example.com",
 #   user: "user_name",
 #   roles: %w{web app},
-#   ssh_options: {
-#     user: "user_name", # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: "please use keys"
-#   }
+  ssh_options: {
+     user: "user_name", # overrides user setting above
+     keys: %w(/home/user_name/.ssh/id_rsa),
+     forward_agent: false,
+     auth_methods: %w(publickey password)
+     password: "please use keys"
+ }
